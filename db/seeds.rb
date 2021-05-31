@@ -84,3 +84,29 @@ mojito = Cocktail.create(
     origin: "Havana, Cuba",
     preparation: "Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
 )
+
+#----------------------Ingredients--------------------#
+
+tequila = Ingredient.create(
+    name: "Tequila",
+    category: "Spirits",
+    type: "Tequila"
+)
+
+triple_sec = Ingredient.create(
+    name: "Triple Sec",
+    category: "Spirits",
+    type: "Liqueur"
+)
+
+lime_juice = Ingredient.create(
+    name: "Lime Juice",
+    category: "Produce",
+    type: "Juice"
+)
+
+lime_wedge = Ingredient.create(
+    name: "Lime Wedge",
+    category: "Produce",
+    type: "Garnish"
+)
