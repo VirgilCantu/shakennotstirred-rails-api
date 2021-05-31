@@ -189,4 +189,14 @@ mint_bouquet = Ingredient.create(
     type: "Garnish"
 )
 
+soda_water = Ingredient.create(
+    name: "Soda Water",
+    category: "Non-Alcoholic",
+    type: "Carbonated Beverages"
+)
 
+lime_wheel = Ingredient.create(
+    name: "Lime Wheel",
+    category: "Produce",
+    type: "Garnish"
+)
