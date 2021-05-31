@@ -82,7 +82,7 @@ mojito = Cocktail.create(
     ice: "Crushed",
     image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Mojito98775.jpeg",
     origin: "Havana, Cuba",
-    preparation: "Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
+    preparation: "Muddle mint leaves with syrup and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
 )
 
 #----------------------Ingredients--------------------#
@@ -200,3 +200,11 @@ lime_wheel = Ingredient.create(
     category: "Produce",
     subcategory: "Garnish"
 )
+
+#----------------------Cocktail + Ingredient - Associations--------------------#
+
+margarita.ingredients << [tequila, triple_sec, lime_juice, lime_wedge]
+negroni.ingredients << [gin, sweet_vermouth, campari, orange_peel]
+mai_tai.ingredients << [aged_rum, white_rum, lime_juice, triple_sec, orgeat, overproof_rum]
+mint_julep.ingredients << [mint, bourbon, simple_syrup, mint_bouquet]
+mojito.ingredients << [white_rum, simple_syrup, lime_juice, soda_water, lime_wheel, mint_bouquet]
