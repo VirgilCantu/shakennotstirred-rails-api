@@ -22,7 +22,7 @@ mary_parker = User.create(
 
 julian_gonzalez = User.create(
     name: "Julian Gonzalez",
-    username: "JulianGonzalez"
+    username: "JulianGonzalez",
     location: "San Francisco, CA"
 )
 
