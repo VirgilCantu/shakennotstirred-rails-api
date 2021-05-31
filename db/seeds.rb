@@ -110,3 +110,27 @@ lime_wedge = Ingredient.create(
     category: "Produce",
     type: "Garnish"
 )
+
+gin = Ingredient.create(
+    name: "Gin",
+    category: "Spirits",
+    type: "Gin"
+)
+
+sweet_vermouth = Ingredient.create(
+    name: "Sweet Vermouth",
+    category: "Fortified Wine",
+    type: "Vermouth"
+)
+
+campari = Ingredient.create(
+    name: "Campari",
+    category: "Spirits",
+    type: "Liqueur"
+)
+
+orange_peel = Ingredient.create(
+    name: "Orange Peel",
+    category: "Produce",
+    type: "Garnish"
+)
