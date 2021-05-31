@@ -6,4 +6,5 @@ class Cocktail < ApplicationRecord
 
     validates :name, presence: true, uniqueness: true
     validates :glassware, presence: true
+    validates :ice, presence: true
 end
