@@ -10,55 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_31_022344) do
+ActiveRecord::Schema.define(version: 0) do
 
-  create_table "cocktail_ingredients", force: :cascade do |t|
-    t.integer "cocktail_id", null: false
-    t.integer "ingredient_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["cocktail_id"], name: "index_cocktail_ingredients_on_cocktail_id"
-    t.index ["ingredient_id"], name: "index_cocktail_ingredients_on_ingredient_id"
-  end
-
-  create_table "cocktails", force: :cascade do |t|
-    t.string "name"
-    t.string "glassware"
-    t.string "ice"
-    t.string "image"
-    t.string "origin"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "preparation"
-  end
-
-  create_table "ingredients", force: :cascade do |t|
-    t.string "name"
-    t.string "category"
-    t.string "type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "user_cocktails", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "cocktail_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["cocktail_id"], name: "index_user_cocktails_on_cocktail_id"
-    t.index ["user_id"], name: "index_user_cocktails_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "username"
-    t.string "location"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  add_foreign_key "cocktail_ingredients", "cocktails"
-  add_foreign_key "cocktail_ingredients", "ingredients"
-  add_foreign_key "user_cocktails", "cocktails"
-  add_foreign_key "user_cocktails", "users"
 end
