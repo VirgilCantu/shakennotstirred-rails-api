@@ -164,3 +164,29 @@ pineapple_flag = Ingredient.create(
     category: "Produce",
     type: "Garnish"
 )
+
+mint = Ingredient.create(
+    name: "Mint",
+    category: "Produce",
+    type: "Herbs"
+)
+
+bourbon = Ingredient.create(
+    name: "Bourbon",
+    category: "Spirits",
+    type: "Whisky"
+)
+
+simple_syrup = Ingredient.create(
+    name: "Simple Syrup",
+    category: "Syrups",
+    type: "Sugar Syrup"
+)
+
+mint_bouquet = Ingredient.create(
+    name: "Mint Bouquet",
+    category: "Produce",
+    type: "Garnish"
+)
+
+
