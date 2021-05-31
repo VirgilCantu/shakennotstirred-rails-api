@@ -3,5 +3,6 @@ class Ingredient < ApplicationRecord
     has_many :cocktails, through: :cocktail_ingredients
 
     validates :name, presence: true, uniqueness: true
+    validates :category, presence: true
     
 end
