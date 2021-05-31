@@ -4,6 +4,6 @@ class Ingredient < ApplicationRecord
 
     validates :name, presence: true, uniqueness: true
     validates :category, presence: true
-    validates :type, presence: true
+    validates :subcategory, presence: true
     
 end
