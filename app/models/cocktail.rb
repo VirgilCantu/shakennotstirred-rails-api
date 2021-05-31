@@ -5,4 +5,5 @@ class Cocktail < ApplicationRecord
     has_many :cocktails, through: :cocktail_ingredients
 
     validates :name, presence: true, uniqueness: true
+    validates :glassware, presence: true
 end
