@@ -208,3 +208,12 @@ negroni.ingredients << [gin, sweet_vermouth, campari, orange_peel]
 mai_tai.ingredients << [aged_rum, white_rum, lime_juice, triple_sec, orgeat, overproof_rum]
 mint_julep.ingredients << [mint, bourbon, simple_syrup, mint_bouquet]
 mojito.ingredients << [white_rum, simple_syrup, lime_juice, soda_water, lime_wheel, mint_bouquet]
+
+#----------------------User + Cocktail - Associations--------------------#
+
+
+john_smith.cocktails << [margarita, mai_tai]
+mary_parker.cocktails << [negroni, mint_julep]
+julian_gonzalez.cocktails << [mai_tai, mojito]
+rachel_frink.cocktails << [negroni, mojito]
+joshua_clemens.cocktails << [margarita, mint_julep]
