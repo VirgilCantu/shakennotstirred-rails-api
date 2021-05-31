@@ -119,7 +119,7 @@ gin = Ingredient.create(
 
 sweet_vermouth = Ingredient.create(
     name: "Sweet Vermouth",
-    category: "Fortified Wine",
+    category: "Fortified Wines",
     type: "Vermouth"
 )
 
@@ -131,6 +131,36 @@ campari = Ingredient.create(
 
 orange_peel = Ingredient.create(
     name: "Orange Peel",
+    category: "Produce",
+    type: "Garnish"
+)
+
+aged_rum = Ingredient.create(
+    name: "Aged Rum",
+    category: "Spirits",
+    type: "Rum"
+)
+
+white_rum = Ingredient.create(
+    name: "White Rum",
+    category: "Spirits",
+    type: "Rum"
+)
+
+orgeat = Ingredient.create(
+    name: "Orgeat",
+    category: "Syrups",
+    type: "Almond Syrup"
+)
+
+overproof_rum = Ingredient.create(
+    name: "Overproof Rum",
+    category: "Spirits",
+    type: "Rum"
+)
+
+pineapple_flag = Ingredient.create(
+    name: "Pineapple Flag",
     category: "Produce",
     type: "Garnish"
 )
