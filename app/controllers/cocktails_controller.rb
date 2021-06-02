@@ -10,7 +10,7 @@ class CocktailsController < ApplicationController
 
   # GET /cocktails/1
   def show
-    render json: cocktail
+    render json: @cocktail
   end
 
   # POST /cocktails
@@ -26,24 +26,24 @@ class CocktailsController < ApplicationController
 
   # PATCH/PUT /cocktails/1
   def update
-    if cocktail.update(cocktail_params)
-      render json: cocktail
+    if @cocktail.update(cocktail_params)
+      render json: @cocktail
     else
-      render json: cocktail.errors, status: :unprocessable_entity
+      render json: @cocktail.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /cocktails/1
   def destroy
-    cocktail.users.destroy_all
-    cocktail.ingredients.destroy_all
-    cocktail.destroy
+    @cocktail.users.destroy_all
+    @cocktail.ingredients.destroy_all
+    @cocktail.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_cocktail
-      cocktail = Cocktail.find(params[:id])
+      @cocktail = Cocktail.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
