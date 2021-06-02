@@ -35,6 +35,7 @@ class CocktailsController < ApplicationController
 
   # DELETE /cocktails/1
   def destroy
+    @cocktail.users.destroy_all
     @cocktail.destroy
   end
 
