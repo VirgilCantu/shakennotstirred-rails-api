@@ -213,13 +213,33 @@ lime_wheel = Ingredient.create(
     quantity: "1 wheel"
 )
 
+white_rum_two  = Ingredient.create(
+    name: "White Rum",
+    category: "Spirits",
+    subcategory: "Rum",
+    quantity: "2 oz"
+)
+
+simple_syrup_one = Ingredient.create(
+    name: "Simple Syrup",
+    category: "Syrups",
+    subcategory: "Sugar Syrup",
+    quantity: "1 oz"
+)
+lime_juice_three_quarters = Ingredient.create(
+    name: "Lime Juice",
+    category: "Produce",
+    subcategory: "Juice",
+    quantity: "0.75 oz"
+)
+
 #----------------------Cocktail + Ingredient - Associations--------------------#
 
 margarita.ingredients << [tequila, triple_sec, lime_juice_one, lime_wedge]
 negroni.ingredients << [gin, sweet_vermouth, campari, orange_peel]
 mai_tai.ingredients << [aged_rum, white_rum, lime_juice_one, triple_sec, orgeat, overproof_rum]
 mint_julep.ingredients << [mint, bourbon, simple_syrup, mint_bouquet]
-mojito.ingredients << [white_rum, simple_syrup, lime_juice, soda_water, lime_wheel, mint_bouquet]
+mojito.ingredients << [white_rum_two, simple_syrup_one, lime_juice_three_quarters, soda_water, lime_wheel, mint_bouquet]
 
 #----------------------User + Cocktail - Associations--------------------#
 
