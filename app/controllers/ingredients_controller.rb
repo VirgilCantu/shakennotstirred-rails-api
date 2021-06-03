@@ -8,7 +8,11 @@ class IngredientsController < ApplicationController
 
   def show
     ingredient = Ingredient.find_by(id: params[:id])
-    render json: ingredient
+    if ingredient
+      render json: ingredient
+    else
+      render json: { message: 'Ingredient not found' }
+    end
   end
 
   def create
