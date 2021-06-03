@@ -82,122 +82,142 @@ mojito = Cocktail.create(
 tequila = Ingredient.create(
     name: "Tequila",
     category: "Spirits",
-    subcategory: "Tequila"
+    subcategory: "Tequila",
+    quantity: "1.5 oz"
 )
 
 triple_sec = Ingredient.create(
     name: "Triple Sec",
     category: "Spirits",
-    subcategory: "Liqueur"
+    subcategory: "Liqueur",
+    quantity: "0.5 oz"
+
 )
 
-lime_juice = Ingredient.create(
+lime_juice_one = Ingredient.create(
     name: "Lime Juice",
     category: "Produce",
-    subcategory: "Juice"
+    subcategory: "Juice",
+    quantity: "1 oz"
 )
 
 lime_wedge = Ingredient.create(
     name: "Lime Wedge",
     category: "Produce",
-    subcategory: "Garnish"
+    subcategory: "Garnish",
+    quantity: "1 wedge"
 )
 
 gin = Ingredient.create(
     name: "Gin",
     category: "Spirits",
-    subcategory: "Gin"
+    subcategory: "Gin",
+    quantity: "1 oz"
 )
 
 sweet_vermouth = Ingredient.create(
     name: "Sweet Vermouth",
     category: "Fortified Wines",
-    subcategory: "Vermouth"
+    subcategory: "Vermouth",
+    quantity: "1 oz"
 )
 
 campari = Ingredient.create(
     name: "Campari",
     category: "Spirits",
-    subcategory: "Liqueur"
+    subcategory: "Liqueur",
+    quantity: "1 oz"
 )
 
 orange_peel = Ingredient.create(
     name: "Orange Peel",
     category: "Produce",
-    subcategory: "Garnish"
+    subcategory: "Garnish",
+    quantity: "1 peel"
 )
 
 aged_rum = Ingredient.create(
     name: "Aged Rum",
     category: "Spirits",
-    subcategory: "Rum"
+    subcategory: "Rum",
+    quantity: "1 oz"
 )
 
 white_rum = Ingredient.create(
     name: "White Rum",
     category: "Spirits",
-    subcategory: "Rum"
+    subcategory: "Rum",
+    quantity: "1 oz"
 )
 
 orgeat = Ingredient.create(
     name: "Orgeat",
     category: "Syrups",
-    subcategory: "Almond Syrup"
+    subcategory: "Almond Syrup",
+    quantity: "0.5 oz"
 )
 
 overproof_rum = Ingredient.create(
     name: "Overproof Rum",
     category: "Spirits",
-    subcategory: "Rum"
+    subcategory: "Rum",
+    quantity: "Float"
 )
 
 pineapple_flag = Ingredient.create(
     name: "Pineapple Flag",
     category: "Produce",
-    subcategory: "Garnish"
+    subcategory: "Garnish",
+    quantity: "1 flag"
 )
 
 mint = Ingredient.create(
     name: "Mint",
     category: "Produce",
-    subcategory: "Herbs"
+    subcategory: "Herbs",
+    quantity: "4 - 5 leaves"
 )
 
 bourbon = Ingredient.create(
     name: "Bourbon",
     category: "Spirits",
-    subcategory: "Whisky"
+    subcategory: "Whisky",
+    quantity: "2 oz"
 )
 
 simple_syrup = Ingredient.create(
     name: "Simple Syrup",
     category: "Syrups",
-    subcategory: "Sugar Syrup"
+    subcategory: "Sugar Syrup",
+    quantity: "0.5 oz"
 )
 
 mint_bouquet = Ingredient.create(
     name: "Mint Bouquet",
     category: "Produce",
-    subcategory: "Garnish"
+    subcategory: "Garnish",
+    quantity: "1 bouquet"
 )
 
 soda_water = Ingredient.create(
     name: "Soda Water",
     category: "Non-Alcoholic",
-    subcategory: "Carbonated Beverages"
+    subcategory: "Carbonated Beverages",
+    quantity: "Fill"
 )
 
 lime_wheel = Ingredient.create(
     name: "Lime Wheel",
     category: "Produce",
-    subcategory: "Garnish"
+    subcategory: "Garnish",
+    quantity: "1 wheel"
 )
 
 #----------------------Cocktail + Ingredient - Associations--------------------#
 
-margarita.ingredients << [tequila, triple_sec, lime_juice, lime_wedge]
+margarita.ingredients << [tequila, triple_sec, lime_juice_one, lime_wedge]
 negroni.ingredients << [gin, sweet_vermouth, campari, orange_peel]
-mai_tai.ingredients << [aged_rum, white_rum, lime_juice, triple_sec, orgeat, overproof_rum]
+mai_tai.ingredients << [aged_rum, white_rum, lime_juice_one, triple_sec, orgeat, overproof_rum]
 mint_julep.ingredients << [mint, bourbon, simple_syrup, mint_bouquet]
 mojito.ingredients << [white_rum, simple_syrup, lime_juice, soda_water, lime_wheel, mint_bouquet]
 
