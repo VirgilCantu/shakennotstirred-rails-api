@@ -7,7 +7,7 @@ class CocktailSerializer
     def to_serialized_json
        options = {
            include: {
-               ingredient: {
+               ingredients: {
                     only: [:name, :category, :subcategory]
                },
            },

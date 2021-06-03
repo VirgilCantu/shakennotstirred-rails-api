@@ -2,15 +2,15 @@ class CocktailsController < ApplicationController
   
   def index
     cocktails = Cocktail.all
-    
-    render json: cocktails
+
+    render json: CocktailSerializer.new(cocktails).to_serialized_json
   end
 
   
   def show
     cocktail = Cocktail.find_by(id: params[:id])
     if cocktail
-      render json: cocktail
+      render json: CocktailSerializer.new(cocktail).to_serialized_json
     else 
       render json: { message: 'Cocktail not found' }
     end
