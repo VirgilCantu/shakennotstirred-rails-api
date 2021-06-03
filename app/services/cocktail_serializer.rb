@@ -8,7 +8,7 @@ class CocktailSerializer
        options = {
            include: {
                ingredients: {
-                    only: [:name, :category, :subcategory]
+                    only: [:name, :category, :subcategory, :quantity]
                },
            },
            except: [:created_at, :updated_at]
