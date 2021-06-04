@@ -36,7 +36,7 @@ margarita = Cocktail.create(
     name: "Margarita",
     glassware: "Margarita",
     ice: "Cubed",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/37/MargaritaReal.jpg",
+    image: "https://www.liquor.com/thmb/WH7s33AbV8zFCMZJg7CUCcjl86Y=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Margarita-720x720-recipe-v2-3c9a8641367d4d0e9409325a92674db0.jpg",
     origin: "Tijuana, Mexico",
     preparation: "Rub the rim of the glass with the lime slice to make the salt stick to it. Shake the other ingredients with ice, then pour into the glass."
 )
@@ -45,7 +45,7 @@ negroni = Cocktail.create(
     name: "Negroni",
     glassware: "Old-Fashioned",
     ice: "Large Cube",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Negroni_served_in_Vancouver_BC.jpg",
+    image: "https://www.liquor.com/thmb/PGdbkJ8aJBacJ3o2TaTBpcl-luQ=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__05__08110806__negroni-720x720-recipe-7c1b747a616f4659af4008d025ab55df.jpg",
     origin: "Florence, Italy",
     preparation: "Stir into glass over ice, garnish and serve."
 )
@@ -54,7 +54,7 @@ mai_tai = Cocktail.create(
     name: "Mai Tai",
     glassware: "Old-Fashioned",
     ice: "Crushed",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/74/Mai_Tai_Trader_Vics_Emeryville.jpg",
+    image: "https://www.liquor.com/thmb/MOsbQG2uw-jB5Dn82w_nYXk6iho=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mai-tai-720x720-primary-e09e24f1cacd4b3896f5aa32ba51dcdd.jpg",
     origin: "Oakland, CA",
     preparation: "Shake all ingredients with ice. Strain into glass. Garnish and serve with straw."
 )
@@ -63,7 +63,7 @@ mint_julep = Cocktail.create(
     name: "Mint Julep",
     glassware: "Julep Tin",
     ice: "Crushed",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/55/Mint_Julep_im_Silberbecher.jpg",
+    image: "https://www.liquor.com/thmb/fL9wzkCPbWHZKSoHOaVHZynFK2k=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mint-julep-720x720-primary-5e2063b906384479b345687201992bd0.jpg",
     origin: "Williamsburg, VA",
     preparation: "In a julep tin gently muddle the mint, sugar and water. Fill the glass with cracked ice, add Bourbon and stir well until the glass is well frosted. Garnish with a mint sprig."
 )
@@ -72,7 +72,7 @@ mojito = Cocktail.create(
     name: "Mojito",
     glassware: "Collins",
     ice: "Crushed",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Mojito98775.jpeg",
+    image: "https://www.liquor.com/thmb/VMoOrrQzOV00AY3rgSK6XxOR0EE=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__09__04153106__mojito-720x720-recipe-a55b114fc99c4a64b38c9ef6d1660e20.jpg",
     origin: "Havana, Cuba",
     preparation: "Muddle mint leaves with syrup and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
 )
