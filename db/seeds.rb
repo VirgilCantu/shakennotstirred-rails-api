@@ -1,35 +1,3 @@
-#----------------------Users--------------------#
-
-john_smith = User.create(
-    name: "John Smith",
-    username: "JohnSmith",
-    location: "Denver, CO"
-)
-
-mary_parker = User.create(
-    name: "Mary Parker",
-    username: "MaryParker",
-    location: "Miami, FL"
-)
-
-julian_gonzalez = User.create(
-    name: "Julian Gonzalez",
-    username: "JulianGonzalez",
-    location: "San Francisco, CA"
-)
-
-rachel_frink = User.create(
-    name: "Rachel Frink",
-    username: "RachelFrink",
-    location: "Minneapolis, MN"
-)
-
-joshua_clemens = User.create(
-    name: "Joshua Clemens",
-    username: "JoshuaClemens",
-    location: "Seattle, WA"
-)
-
 #----------------------Cocktails--------------------#
 
 margarita = Cocktail.create(
@@ -240,12 +208,3 @@ negroni.ingredients << [gin, sweet_vermouth, campari, orange_peel]
 mai_tai.ingredients << [aged_rum, white_rum, lime_juice_one, triple_sec, orgeat, overproof_rum]
 mint_julep.ingredients << [mint, bourbon, simple_syrup, mint_bouquet]
 mojito.ingredients << [white_rum_two, simple_syrup_one, lime_juice_three_quarters, soda_water, lime_wheel, mint_bouquet]
-
-#----------------------User + Cocktail - Associations--------------------#
-
-
-john_smith.cocktails << [margarita, mai_tai]
-mary_parker.cocktails << [negroni, mint_julep]
-julian_gonzalez.cocktails << [mai_tai, mojito]
-rachel_frink.cocktails << [negroni, mojito]
-joshua_clemens.cocktails << [margarita, mint_julep]
