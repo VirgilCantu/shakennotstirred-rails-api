@@ -10,4 +10,6 @@ class Cocktail < ApplicationRecord
     validates :preparation, presence: true
     validates :image, presence: true
     
+    accepts_nested_attributes_for :ingredients
+
 end
