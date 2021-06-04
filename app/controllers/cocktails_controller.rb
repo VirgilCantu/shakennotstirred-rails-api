@@ -40,7 +40,6 @@ class CocktailsController < ApplicationController
   
   def destroy
     cocktail = Cocktail.find_by(id: params[:id])
-    cocktail.users.destroy_all
     cocktail.ingredients.destroy_all
     cocktail.destroy
   end
