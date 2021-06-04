@@ -6,6 +6,7 @@ class CreateCocktails < ActiveRecord::Migration[6.1]
       t.string :ice
       t.string :image
       t.string :origin
+      t.string :preparation
 
       t.timestamps
     end

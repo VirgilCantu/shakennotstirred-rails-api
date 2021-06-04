@@ -4,6 +4,7 @@ class CreateIngredients < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :category
       t.string :subcategory
+      t.string :quantity
 
       t.timestamps
     end
