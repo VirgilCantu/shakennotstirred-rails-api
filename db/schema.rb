@@ -10,6 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_05_30_232458) do
 
+  create_table "cocktail_ingredients", force: :cascade do |t|
+    t.integer "cocktail_id", null: false
+    t.integer "ingredient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cocktail_id"], name: "index_cocktail_ingredients_on_cocktail_id"
+    t.index ["ingredient_id"], name: "index_cocktail_ingredients_on_ingredient_id"
+  end
+
+  create_table "cocktails", force: :cascade do |t|
+    t.string "name"
+    t.string "glassware"
+    t.string "ice"
+    t.string "image"
+    t.string "origin"
+    t.string "preparation"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "ingredients", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.string "quantity"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "cocktail_ingredients", "cocktails"
+  add_foreign_key "cocktail_ingredients", "ingredients"
 end
