@@ -3,7 +3,6 @@ class CreateIngredients < ActiveRecord::Migration[6.1]
     create_table :ingredients do |t|
       t.string :name
       t.string :category
-      t.string :subcategory
       t.string :quantity
 
       t.timestamps
