@@ -1,6 +1,6 @@
 # Shaken Not Stirred
 
-Welcome to Shaken Not Stirred! Shaken Not Stirred is a repository for cocktails and mixed drinks alike, open to everyone from hopsitality industry experts to cocktail aficionados!
+Welcome to Shaken Not Stirred! Shaken Not Stirred is a repository for cocktails and mixed drinks alike, open to everyone from hospitality industry experts to cocktail aficionados!
 
 ## Installation
 
